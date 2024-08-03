@@ -1,0 +1,20 @@
+.your_library {
+  height: 18rem;
+  overflow-y: scroll;
+}
+/* .your_library::-webkit-scrollbar{
+      width: 12px;
+      background-color: #ffffff75;
+  } */
+.your_library::-webkit-scrollbar {
+  appearance: none;
+  width: 12px;
+  background-color: black;
+}
+
+.custom-blur {
+  background-color: rgb(21 50 80 / 33%);
+}
+.custom-blur::backdrop {
+  backdrop-filter: blur(1px);
+}
