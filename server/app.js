@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 mongoose
   .connect(
-    "mongodb+srv://shubham:spotifypass@database.vg3gxc7.mongodb.net/?retryWrites=true&w=majority&appName=database"
+    "mongodb+srv://katiyaraman266:Shashi@111@cluster0.zy0in4e.mongodb.net/?retryWrites=true&w=majority&appName=database"
   )
   .then(() => {
     console.log("connected to the db");
@@ -42,14 +42,3 @@ app.use("/api/playlist", playlistRouter);
 app.use("/api/songs", songRouter);
 
 app.use(error);
-
-// process.on("unhandledRejection", (err) => {
-//   console.log(`error: ${err.message}`);
-//   console.log(`shutting down the server due to unhandled promise rejection`);
-//   server.close(() => process.exit(1));
-// });
-
-// process.on("uncaughtException", (err) => {
-//   console.log(`error: ${err.message}`);
-//   console.log(`shutting down the server due to unhandled promise rejection`);
-// });
